@@ -31,7 +31,7 @@ body{
     height: 350px;
     background: rgb(104, 15, 15);
     padding:80px 12px 120px 35px;
-    z-index: -1;
+    z-index: 1;
     border-radius: 0 0 0 90%;
     transition: right 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
@@ -110,9 +110,9 @@ float: left;
 
 /*Hamburger*/
 .burger{
-    /* position: fixed;
-    top: 4%;
-    right: 6%;*/
+    position: fixed;
+    top: 10.8%;
+    right: 8%;
     z-index: 3;
     float: right;
     font-size: 25px;
