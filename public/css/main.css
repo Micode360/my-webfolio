@@ -110,12 +110,13 @@ float: left;
 
 /*Hamburger*/
 .burger{
-    position: fixed;
+    /* position: fixed;
     top: 4%;
     right: 6%;
-    z-index: 2;
+    z-index: 2; */
     float: right;
     font-size: 25px;
+    margin-top: -3.7px;
 }
 
 
