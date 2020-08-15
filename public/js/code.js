@@ -102,9 +102,15 @@
                const sent = document.querySelector('.header-sent')
                sent.style.display = 'block';
                sent.classList.add('sent-visible');
+               pageReload();
               }
-    
+           
+              }
 
+              const pageReload = () => {
+                setTimeout(() => {
+                  location.reload();
+                }, 3000);
               }
 
                 document.querySelector('.x').addEventListener('click', hideX);
