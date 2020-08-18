@@ -111,7 +111,7 @@ float: left;
 /*Hamburger*/
 .burger{
     position: fixed;
-    top: 10.8%;
+    top: 7%;
     right: 8%;
     z-index: 3;
     float: right;
