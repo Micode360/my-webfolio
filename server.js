@@ -49,7 +49,12 @@ app.get('/works', (req,res)=>{
     <h4>${req.body.name}</h4>
     <p>${req.body.message}</p>
  `;
-    //console.log(req.body);
+
+      // console.log({
+      //   email: req.body.email,
+      //   name: req.body.name,
+      //   message: req.body.message
+      // });
     main(temp).catch(console.error);
   }
 

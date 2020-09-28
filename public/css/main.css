@@ -95,6 +95,7 @@ float: left;
     right: 0;
     text-align: center;
 }
+
 .nav-on-wall a{
         background-color: rgb(85, 11, 11);
         padding: 14px;
@@ -111,8 +112,8 @@ float: left;
 /*Hamburger*/
 .burger{
     position: fixed;
-    top: 7%;
-    right: 8%;
+    top: 39px;
+    right: 40px;
     z-index: 3;
     float: right;
     font-size: 25px;
@@ -600,7 +601,15 @@ z-index: -2;
     background-color:#156e21;
     padding-top: 10px;
     padding-bottom: 10px;
+    z-index: 3;
     transition: bottom 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+@media(max-width:500px){
+    .header-sent{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .sent-visible{
@@ -904,7 +913,7 @@ footer{
 
 
     .lang-container div span{
-        font-size: 12px;
+        font-size: 18px;
     }
 
     #my-lang{
@@ -1002,7 +1011,6 @@ footer{
             height: 60px;
         }
         
-        
         .lang-img{
             width: 130px;
         }
@@ -1016,7 +1024,6 @@ footer{
             width: 60px;
             height: 60px;
         }
-    
     
         .lang-container div span{
             font-size: 12px;
@@ -1040,15 +1047,15 @@ footer{
         }
 }
 
-
-
-@media(max-width:320px){
+@media(max-width:380px){
     #first-section-container{
         display: none;
     }
+}
 
-    
-    
+
+@media(max-width:320px){
+
     #contact-form input, textarea{
         margin-left:16px;
         margin-right:16px;
@@ -1065,7 +1072,23 @@ footer{
     }
 }
 
-@media(max-width: 600px){
+@media(max-width:500px){
+    .circle{
+        border: 4px solid rgb(22, 165, 129);
+        font-size: 18px;
+    }
+}
+
+/* 
+@media(min-width:500px) and ( max-width:759px){
+    .circle{
+        border: 6px solid rgb(22, 165, 129) !important;
+        font-size: 18px;
+    }
+} */
+
+
+@media(max-width: 759px){
     .bio-container{
         padding: 5px;
         padding-bottom: 5px;
@@ -1110,7 +1133,7 @@ footer{
      }
 
      .rating-card h4{
-         font-size: 10px;
+         font-size: 14px;
      }
     
      .prof-container{
@@ -1125,7 +1148,7 @@ footer{
          border: 4px solid rgb(22, 165, 129);
          font-family: Arsenal;
          font-weight: 800;
-         font-size: 12px;
+
          border-radius: 50%;
          padding: 10px;
      }
@@ -1211,3 +1234,12 @@ footer{
         }
 
     }
+
+
+    @media(max-width: 280px){
+        .burger{
+            position: fixed;
+            top: 33.5px !important;
+        }
+    }
+    

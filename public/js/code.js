@@ -21,6 +21,12 @@
        });
 
 
+       document.querySelector('.cover').addEventListener('click', closeCoverMachine);
+
+       function closeCoverMachine(){
+           document.querySelector('.cover').style.display = 'none';
+       }
+
 
        document.getElementById('mod-board').addEventListener('click', statisticsMachine);
 
