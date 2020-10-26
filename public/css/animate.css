@@ -140,4 +140,55 @@
 
 
 
+/*Three*/
+@keyframes htmlIII{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 6%;
+    }
+}
+
+@keyframes cssIII{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 18%;
+    }
+}
+
+@keyframes javascriptIII{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 15%;
+    }
+}
+
+@keyframes reactI{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+
+
+@keyframes slideUp{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 50px;
+    }
+}
+
+
+
+
 

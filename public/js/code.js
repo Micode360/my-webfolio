@@ -45,6 +45,24 @@
         }
 
 
+        (function () {
+          setTimeout(() => {
+            document.querySelector('.info').style.display = 'block';
+          }, 5000);
+        })();
+
+        document.querySelector('.git-close').addEventListener('click', closeGitModal);
+
+        function closeGitModal(){
+            if(window.innerWidth > 370) {
+            document.querySelector('.info').style.display = 'none';
+            }
+        }
+
+
+
+
+
        //nav on wall visibilitly
        window.addEventListener('load', function(){
         const onwall = document.querySelector('.nav-on-wall');

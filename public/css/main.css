@@ -817,13 +817,46 @@ footer{
             margin: 12px;
         }
         
-        #contacts span{
+        #contacts span {
             font-family: Arsenal-Bold;
             letter-spacing:1.5px;
             font-size: 20px;
         }
     
 }
+
+.info{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgb(104, 15, 15);
+    padding: 20px 20px;
+    display: none;
+    animation: slideUp 0.8s;
+}
+
+.git-link{
+    text-decoration: none;
+    color: #eee;
+}
+
+.git-link:hover{
+    text-decoration: none;
+    color: rgb(211, 176, 22);
+}
+
+.git-close{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    cursor: pointer;
+}
+
+.git-close:hover{
+    color: rgb(185, 177, 177);
+}
+
 
 
 

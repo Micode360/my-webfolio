@@ -351,6 +351,71 @@ body{
 
 
 
+    #live-quote-container{
+        position: fixed;
+        background:rgba(61, 54, 54, 0.685);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index:2;
+        display: none;
+        justify-items: center;
+    }
+
+    #graph-bot-header-img{
+        width: 65px;
+        height: 65px;
+        padding:20px 15px 8px 15px;
+}
+
+    .closeIII{
+        position: absolute;
+        top: 8%;
+        right: 5%;
+        cursor: pointer;
+     }
+     
+     .closeIII:hover{
+         color: rgb(185, 177, 177);
+     }
+    
+
+     #htmlIII{
+        background-color: rgba(32, 32, 204, 0.418);
+        margin: 0 !important;
+        height: 35px;
+        width: 6%;
+        animation: htmlIII 2s;
+    }
+    
+    #cssIII{
+        background-color: rgba(32, 32, 204, 0.418);
+        margin: 0 !important;
+        height: 35px;
+        width: 18%;
+        animation: cssIII 2s;
+    }
+    
+    #javascriptIII{
+        background-color: rgba(32, 32, 204, 0.418);
+        margin: 0 !important;
+        height: 35px;
+        width: 15%;
+        animation: javascriptIII 2s;
+    }
+    
+
+    #react{
+        background-color: rgba(32, 32, 204, 0.418);
+        margin: 0 !important;
+        height: 35px;
+        width: 50%;
+        animation: reactI 2s;
+    }
+    
+
+
 @media(max-width:800px) {
     .active {
         position:absolute;
