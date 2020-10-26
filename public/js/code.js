@@ -54,9 +54,7 @@
         document.querySelector('.git-close').addEventListener('click', closeGitModal);
 
         function closeGitModal(){
-            if(window.innerWidth > 370) {
             document.querySelector('.info').style.display = 'none';
-            }
         }
 
 
