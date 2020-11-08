@@ -857,7 +857,15 @@ footer{
     color: rgb(185, 177, 177);
 }
 
+.break{
+    display: none;
+}
 
+@media (max-width:300px){
+    .break{
+        display: block;
+    }
+}
 
 
 
