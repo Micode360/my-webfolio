@@ -82,9 +82,6 @@
        } 
 
 
-       
-
-
       const contactForm = document.querySelector('#contact-form'),        
             email = document.querySelector('#email'),
             name = document.querySelector('#name'),

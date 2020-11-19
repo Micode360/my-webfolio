@@ -50,11 +50,11 @@ app.get('/works', (req,res)=>{
     <p>${req.body.message}</p>
  `;
 
-      // console.log({
-      //   email: req.body.email,
-      //   name: req.body.name,
-      //   message: req.body.message
-      // });
+      console.log({
+        email: req.body.email,
+        name: req.body.name,
+        message: req.body.message
+      });
     main(temp).catch(console.error);
   }
 
