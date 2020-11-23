@@ -179,6 +179,46 @@
 
 
 
+/*four*/
+/*Three*/
+@keyframes htmlIV{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 46%;
+    }
+}
+
+@keyframes cssIV{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 32%;
+    }
+}
+
+@keyframes javascriptIV{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 4%;
+    }
+}
+
+@keyframes nodeIV{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+
+
+/*Home page git hub modal*/
 @keyframes slideUp{
     0%{
         height: 0;

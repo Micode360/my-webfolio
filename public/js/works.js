@@ -57,6 +57,26 @@ function quoteModalOff(){
 
 
 
+document.getElementById('mr-produxer').addEventListener('click', produxerMachine);
+
+function produxerMachine(){
+    if(window.innerWidth > 650) {
+    document.querySelector('#mr-produxer-container').style.display = 'flex';
+    }
+}
+
+document.querySelector('.closeIV').addEventListener('click', produxerOff);
+function produxerOff(){
+     document.querySelector('#mr-produxer-container').style.display = 'none';
+}
+
+document.querySelector('#mr-produxer-container').addEventListener('click', produxerModalOff);
+function produxerModalOff(){
+     document.querySelector('#mr-produxer-container').style.display = 'none';
+}
+
+
+
 
 
 
