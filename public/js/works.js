@@ -1,79 +1,62 @@
-document.getElementById('webfolio-img-card').addEventListener('click', folioModalDisplayOn);
-function folioModalDisplayOn(){
-    if(window.innerWidth > 650) {
-     document.querySelector('.cover').style.display = 'flex';
-}
-}
+//Function to open modal
+function modalOnProgram(attribute,detectAttribute,widthValue, display){
+     document.querySelector(attribute).addEventListener('click', modalOn);
 
-document.querySelector('.close').addEventListener('click', folioModalDisplayOff);
-function folioModalDisplayOff(){
-     document.querySelector('.cover').style.display = 'none';
-}
-
-document.querySelector('.cover').addEventListener('click', coverOff);
-function coverOff(){
-     document.querySelector('.cover').style.display = 'none';
+    function modalOn(){
+        if(window.innerWidth > widthValue)
+        document.querySelector(detectAttribute).style.display = display;
+ }
 }
 
 
+ //Function to close modal
+function modalOffProgram(attribute,detectAttribute,display){
+     document.querySelector(attribute).addEventListener('click', modalOff);
 
-document.getElementById('chat-bot').addEventListener('click', chatBotModal);
-
-function chatBotModal(){
-    if(window.innerWidth > 650) {
-    document.querySelector('.modal-container').style.display = 'flex';
-    }
+    function modalOff(){
+          document.querySelector(detectAttribute).style.display = display;
+ }
 }
 
-document.querySelector('.closeII').addEventListener('click', folioModalDisplayOffII);
-function folioModalDisplayOffII(){
-     document.querySelector('.modal-container').style.display = 'none';
-}
 
-document.querySelector('.modal-container').addEventListener('click', chatModalOff);
-function chatModalOff(){
-     document.querySelector('.modal-container').style.display = 'none';
+ //Function to close cover modal
+ function modalOffCoverProgram(attribute,detectAttribute,display){
+     document.querySelector(attribute).addEventListener('click', modalCoverOff);
+
+    function modalCoverOff() {
+          document.querySelector(detectAttribute).style.display = display;
+ }
 }
 
 
 
-document.getElementById('live-quote').addEventListener('click', liveQuoteMachine);
-
-function liveQuoteMachine(){
-    if(window.innerWidth > 650) {
-    document.querySelector('#live-quote-container').style.display = 'flex';
-    }
-}
-
-document.querySelector('.closeIII').addEventListener('click', liveQuoteOff);
-function liveQuoteOff(){
-     document.querySelector('#live-quote-container').style.display = 'none';
-}
-
-document.querySelector('#live-quote-container').addEventListener('click', quoteModalOff);
-function quoteModalOff(){
-     document.querySelector('#live-quote-container').style.display = 'none';
-}
+//Webfolio
+modalOnProgram('#webfolio-img-card','.cover',650,'flex');//To onemodal
+modalOffProgram('.close','.cover','none');//To close Modal through x button
+modalOffCoverProgram('.cover','.cover','none');//To close modal through cover Modal
 
 
 
-document.getElementById('mr-produxer').addEventListener('click', produxerMachine);
+//Chatbot
+modalOnProgram('#chat-bot','.modal-container',650,'flex');//To on modal
+modalOffProgram('.closeII','.modal-container','none');//To close Modal through x button
+modalOffCoverProgram('.modal-container','.modal-container','none');//To close modal through cover Modal
 
-function produxerMachine(){
-    if(window.innerWidth > 650) {
-    document.querySelector('#mr-produxer-container').style.display = 'flex';
-    }
-}
+//LiveQuoteMachine
+modalOnProgram('#live-quote','#live-quote-container',650,'flex');//To on modal
+modalOffProgram('.closeIII','.#live-quote-container','none');//To close Modal through x button
+modalOffCoverProgram('#live-quote-container','#live-quote-container','none');//To close modal through cover Modal
 
-document.querySelector('.closeIV').addEventListener('click', produxerOff);
-function produxerOff(){
-     document.querySelector('#mr-produxer-container').style.display = 'none';
-}
 
-document.querySelector('#mr-produxer-container').addEventListener('click', produxerModalOff);
-function produxerModalOff(){
-     document.querySelector('#mr-produxer-container').style.display = 'none';
-}
+//Mr Produxer
+modalOnProgram('#mr-produxer','#mr-produxer-container',650,'flex');//To on modal
+modalOffProgram('.closeIV','.#mr-produxer-container','none');//To close Modal through x button
+modalOffCoverProgram('#mr-produxer-container','#mr-produxer-container','none');//To close modal through cover Modal
+
+
+
+
+
 
 
 
