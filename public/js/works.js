@@ -44,7 +44,7 @@ modalOffCoverProgram('.modal-container','.modal-container','none');//To close mo
 
 //LiveQuoteMachine
 modalOnProgram('#live-quote','#live-quote-container',650,'flex');//To on modal
-modalOffProgram('.closeIII','.#live-quote-container','none');//To close Modal through x button
+modalOffProgram('.closeIII','#live-quote-container','none');//To close Modal through x button
 modalOffCoverProgram('#live-quote-container','#live-quote-container','none');//To close modal through cover Modal
 
 
