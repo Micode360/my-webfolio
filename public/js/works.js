@@ -50,7 +50,7 @@ modalOffCoverProgram('#live-quote-container','#live-quote-container','none');//T
 
 //Mr Produxer
 modalOnProgram('#mr-produxer','#mr-produxer-container',650,'flex');//To on modal
-modalOffProgram('.closeIV','.#mr-produxer-container','none');//To close Modal through x button
+modalOffProgram('.closeIV','#mr-produxer-container','none');//To close Modal through x button
 modalOffCoverProgram('#mr-produxer-container','#mr-produxer-container','none');//To close modal through cover Modal
 
 
